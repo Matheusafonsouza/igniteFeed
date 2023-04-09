@@ -1,11 +1,22 @@
-import './global.css'
 import { Header } from './components/Header'
+
+import styles from './App.module.css'
+import './global.css'
+
 
 function App() {
   return (
     <div>
       <Header />
-      <h1>Hello World!</h1>
+
+      <div className={styles.wrapper}>
+        <aside>
+          sidebar
+        </aside>
+        <main>
+          main
+        </main>
+      </div>
     </div>
   )
 }
